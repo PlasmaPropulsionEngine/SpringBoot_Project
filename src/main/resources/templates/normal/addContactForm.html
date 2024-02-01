@@ -1,0 +1,159 @@
+
+<!doctype html>
+<html lang="en"   xmlns:th="http://www.thymeleaf.org" th:replace="~{normal/Base::layout(~{::section})}">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+</head>
+<body>
+	<section>
+		
+		
+		
+		<div class="card mr-3">
+			
+			<div class="card-body">
+				
+				<h1 class="text-center">Add contact</h1>
+				
+				<div class="container-fluid mt-1"></div>
+				<div class="row">
+					
+					<div class="col-md-8 offset-md-2">
+						
+					<form 
+					action="#"
+					 th:action="@{/user/process-contact}"
+						th:object="${contact}"
+					 enctype="multipart/form-data" 
+					 method="post"
+					 class="mt-2">
+						
+						
+						<!--firstname-->
+						<div class="input-group">
+							<div class="input-group-prepend">
+								
+								<div class="input-group-text ">
+									
+									<i class="fa fa-plus"></i>
+									&nbsp;
+								</div>
+							</div>
+							
+							<input  required  class="form-control" type="text" name="name" id="firstname" placeholder="firstname" >
+							
+						</div>
+						
+						<!--lastname-->
+						
+						<div class="input-group mt-3">
+							<div class="input-group-prepend">
+								
+								<div class="input-group-text ">
+									
+									<i class="fas fa-user-alt"></i>
+									&nbsp;
+								</div>
+							</div>
+							
+							<input  required  class="form-control" type="text" name="nickname" id="nickname" placeholder="nickname " >
+							
+						</div>
+						
+						
+						<!--phone-->
+						
+						
+						<div class="input-group mt-3">
+							<div class="input-group-prepend">
+								
+								<div class="input-group-text ">
+									
+									<i class="fa fa-phone"></i>
+									&nbsp;
+								</div>
+							</div>
+							
+							<input required   class="form-control" type="tel" name="phone" id="phone" placeholder="phone " min="10" >
+							
+						</div>
+						
+						
+						
+						<!--email-->
+						
+						
+						<div class="input-group mt-3">
+							<div class="input-group-prepend">
+								
+								<div class="input-group-text ">
+									
+									@
+									&nbsp;
+								</div>
+							</div>
+							
+							<input required  class="form-control" type="email" name="email" id="email" placeholder="email " >
+							
+						</div>
+						
+						
+						
+						<!--work-->
+						
+						
+						<div class="input-group mt-3">
+							<div class="input-group-prepend">
+								
+								<div class="input-group-text ">
+									
+									<i class="fa fa-briefcase"></i>
+									&nbsp;
+								</div>
+							</div>
+							
+							<input   class="form-control" type="text" name="work" id="work" placeholder="work " >
+							
+						</div>
+						
+						
+							<!--description-->
+						<div class="form-group mt-3">
+							
+							<textarea name="description" id="description" cols="10" rows="10" class="form-control" placeholder="contact description"></textarea>
+								
+						</div>
+						
+						
+						<!--contact image-->
+						
+						<div class="custom-file mt-3">
+							<input type="file" name="img">
+						</div>
+						
+						
+						<div class="container text-center">
+							
+							<button  class="btn btn-outline-primary mt-3">Save Contact</button>
+							
+						</div>
+						
+						
+						
+								
+					</form>	
+							
+					</div>
+				</div>
+								
+			</div>
+			
+		</div>
+		
+		
+		
+
+	</section>
+</body>
+</html>
