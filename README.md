@@ -1,6 +1,7 @@
 # Project Name: Demo Contact Manager
-Project description: simple project which stores contact information such as email, phone no, description etc. using spring boot
-#Dependencies:
+Project description: simple project which stores contact information such as email, phone no, description etc. using spring boot,mvc,thymeleaf.
+
+#Dependencies used:
 1.spring-boot-starter-web
 2.spring-boot-starter-thymeleaf
 3.spring-boot-starter-data-jpa
