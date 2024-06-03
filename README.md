@@ -1,4 +1,4 @@
-# Project Name: Demo Contact Manager
+# Project Name: Simple Contact Manager
 Project description: simple project which stores contact information such as email, phone no, description etc. using spring boot,mvc,thymeleaf.
 
 #Dependencies used:
